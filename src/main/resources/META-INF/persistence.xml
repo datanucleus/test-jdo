@@ -5,13 +5,15 @@
     version="1.0">
 
     <persistence-unit name="MyTest">
+        <!-- Add all of your model classes here -->
         <class>mydomain.model.Person</class>
         <exclude-unlisted-classes />
         <properties>
-            <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:nucleus"/>
-            <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
-            <property name="javax.persistence.jdbc.user" value="sa"/>
-            <property name="javax.persistence.jdbc.password" value=""/>
+            <!-- Update these datastore details if different -->
+            <property name="javax.jdo.option.ConnectionURL" value="jdbc:h2:mem:nucleus"/>
+            <property name="javax.jdo.option.ConnectionDriverName" value="org.h2.Driver"/>
+            <property name="javax.jdo.option.UserName" value="sa"/>
+            <property name="javax.jdo.option.Password" value=""/>
 
             <property name="datanucleus.autoCreateSchema" value="true"/>
             <property name="datanucleus.autoCreateColumns" value="true"/>
