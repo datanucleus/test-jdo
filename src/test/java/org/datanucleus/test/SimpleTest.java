@@ -3,6 +3,7 @@ package org.datanucleus.test;
 import org.junit.*;
 import javax.jdo.*;
 
+import static org.junit.Assert.*;
 import mydomain.model.*;
 import org.datanucleus.util.NucleusLogger;
 
@@ -25,7 +26,7 @@ public class SimpleTest
         }
         catch (Throwable thr)
         {
-            LOG.error(">> Exception thrown persisting data", thr);
+            NucleusLogger.GENERAL.error(">> Exception thrown persisting data", thr);
             fail("Failed to persist data : " + thr.getMessage());
         }
         finally 

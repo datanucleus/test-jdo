@@ -76,6 +76,13 @@
                     <include>**/orm.xml</include>
                 </includes>
             </resource>
+            <resource>
+                <filtering>true</filtering>
+                <directory>${basedir}</directory>
+                <includes>
+                    <include>**/log4j.properties</include>
+                </includes>
+            </resource>
         </resources>
 
         <plugins>
