@@ -13,7 +13,7 @@ public class MultithreadTest
     public void testMulti()
     {
         NucleusLogger.GENERAL.info(">> test START");
-        PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("MyTest");
+        final PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("MyTest");
 
         try
         {
