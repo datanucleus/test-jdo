@@ -17,12 +17,12 @@
         <dependency>
             <groupId>org.datanucleus</groupId>
             <artifactId>datanucleus-core</artifactId>
-            <version>[3.1.99, )</version>
+            <version>(3.1.99, )</version>
         </dependency>
         <dependency>
             <groupId>org.datanucleus</groupId>
             <artifactId>datanucleus-api-jdo</artifactId>
-            <version>[3.1.99, )</version>
+            <version>(3.1.99, )</version>
         </dependency>
 
         <dependency>
@@ -40,7 +40,7 @@
         <dependency>
             <groupId>org.datanucleus</groupId>
             <artifactId>datanucleus-rdbms</artifactId>
-            <version>[3.1.99, )</version>
+            <version>(3.1.99, )</version>
         </dependency>
 
         <!-- Change to the datastore driver required for your datastore -->
@@ -78,7 +78,7 @@
             </resource>
             <resource>
                 <filtering>true</filtering>
-                <directory>${basedir}</directory>
+                <directory>${basedir}/src/main/resources</directory>
                 <includes>
                     <include>**/log4j.properties</include>
                 </includes>
@@ -119,13 +119,13 @@
             <plugin>
                 <groupId>org.datanucleus</groupId>
                 <artifactId>datanucleus-maven-plugin</artifactId>
-                <version>3.2.0-m3</version>
+                <version>3.2.0-release</version>
                 <configuration>
                     <api>JDO</api>
                     <persistenceUnitName>MyTest</persistenceUnitName>
                     <fork>false</fork>
                     <verbose>false</verbose>
-                    <log4jConfiguration>${basedir}/log4j.properties</log4jConfiguration>
+                    <log4jConfiguration>${basedir}/src/main/resources/log4j.properties</log4jConfiguration>
                 </configuration>
                 <executions>
                     <execution>
@@ -157,7 +157,7 @@
                     <systemProperties>
                         <systemProperty>
                             <key>log4j.configuration</key>
-                            <value>file:${basedir}/log4j.properties</value>
+                            <value>file:${basedir}/src/main/resources/log4j.properties</value>
                         </systemProperty>
                     </systemProperties>
                 </configuration>
