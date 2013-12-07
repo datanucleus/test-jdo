@@ -2,7 +2,7 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.datanucleus</groupId>
-    <version>3.2</version>
+    <version>3.3</version>
     <artifactId>datanucleus-test-jdo</artifactId>
     <name>DataNucleus Test for JDO</name>
     <description>DataNucleus Test for JDO</description>
@@ -111,15 +111,15 @@
                 <version>2.3.2</version>
                 <configuration>
                     <encoding>ISO-8859-1</encoding>
-                    <source>1.5</source>
-                    <target>1.5</target>
+                    <source>1.6</source>
+                    <target>1.6</target>
                 </configuration>
             </plugin>
 
             <plugin>
                 <groupId>org.datanucleus</groupId>
                 <artifactId>datanucleus-maven-plugin</artifactId>
-                <version>3.2.0-release</version>
+                <version>3.3.1</version>
                 <configuration>
                     <api>JDO</api>
                     <persistenceUnitName>MyTest</persistenceUnitName>
