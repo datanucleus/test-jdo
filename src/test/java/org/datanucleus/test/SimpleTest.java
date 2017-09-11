@@ -21,9 +21,9 @@ public class SimpleTest
         try
         {
             tx.begin();
-
-            // [INSERT code here to persist object required for testing]
-
+            Product product = new Product("Electronics", "TV", "LG LED Smart TV", 41000D);
+            //product.setProductId(122332L);
+            pm.makePersistent(product);
             tx.commit();
         }
         catch (Throwable thr)
