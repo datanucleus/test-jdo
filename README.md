@@ -11,3 +11,9 @@ necessary to add your model and persistence commands. The files that you'll like
 * <a href="https://github.com/datanucleus/test-jdo/blob/master/src/test/java/org/datanucleus/test/MultithreadTest.java">src/test/java/org/datanucleus/test/MultithreadTest.java</a>   **[Edit this if a multi-thread test is required]**
 
 To run this, simply type "mvn clean compile test"
+
+
+MongoDB Environment Setup :
+Running above example of mondodb store requested to setup mongodb database authentication for user access control.
+
+Enable MongoDB Authentication refer to link https://docs.mongodb.com/manual/tutorial/enable-authentication/
