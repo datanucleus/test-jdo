@@ -4,19 +4,19 @@
                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.datanucleus</groupId>
-    <version>5.1</version>
+    <version>5.2</version>
     <artifactId>datanucleus-test-jdo</artifactId>
     <name>DataNucleus Test for JDO</name>
     <description>DataNucleus Test for JDO</description>
 
     <properties>
         <javax_jdo.ver>3.2.0-m7</javax_jdo.ver>
-        <dn.core.min.ver>5.0.1</dn.core.min.ver>
-        <dn.core.max.ver>5.1.99</dn.core.max.ver>
-        <dn.api_jdo.min.ver>5.0.1</dn.api_jdo.min.ver>
-        <dn.api_jdo.max.ver>5.1.99</dn.api_jdo.max.ver>
-        <dn.datastore.min.ver>5.0.1</dn.datastore.min.ver>
-        <dn.datastore.max.ver>5.1.99</dn.datastore.max.ver>
+        <dn.core.min.ver>5.1.99</dn.core.min.ver>
+        <dn.core.max.ver>5.2.99</dn.core.max.ver>
+        <dn.api_jdo.min.ver>5.1.99</dn.api_jdo.min.ver>
+        <dn.api_jdo.max.ver>5.2.99</dn.api_jdo.max.ver>
+        <dn.datastore.min.ver>5.1.99</dn.datastore.min.ver>
+        <dn.datastore.max.ver>5.2.99</dn.datastore.max.ver>
         <dn.maven.plugin.ver>5.0.2</dn.maven.plugin.ver>
     </properties>
 
