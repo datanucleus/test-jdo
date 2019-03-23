@@ -17,6 +17,7 @@
             <property name="javax.jdo.option.ConnectionPassword" value=""/>
 
             <property name="datanucleus.schema.autoCreateAll" value="true"/>
+            <property name="datanucleus.generateSchema.database.mode" value="drop-and-create"/>
         </properties>
     </persistence-unit>
 
